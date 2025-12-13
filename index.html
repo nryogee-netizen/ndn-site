@@ -12,6 +12,12 @@
       <img src="assets/logo.svg" alt="NDN logo" class="logo">
       <h1>NDN - Company Profile</h1>
       <p class="tagline">Leading solutions in industrial automation and engineering</p>
+      <!-- Search box for client/company names -->
+      <div class="search-container">
+        <label for="searchBox" class="visually-hidden">Search</label>
+        <input id="searchBox" class="search-input" placeholder="Search company, product, or client..." aria-label="Site Search" />
+        <div id="searchResults" class="search-results" aria-live="polite"></div>
+      </div>
     </div>
   </header>
 
@@ -167,6 +173,7 @@ PLC TEST KIT FOR ENGINEERING UNIVERSITY:
   <footer class="site-footer">
     <div class="container">© NDN 2025 — Company Profile</div>
   </footer>
+  <script src="js/search.js" defer></script>
   <script>
     // Load gallery from a generated manifest to avoid probing non-existent files
     (async function(){
