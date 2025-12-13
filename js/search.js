@@ -1,7 +1,26 @@
 // Simple client-side search for the site
 (function(){
   function escapeHtml(s){return s.replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;' })[c])}
-  function generateId(el){ if(!el.id){ el.id = 'sect-' + Math.random().toString(36).slice(2,9); } return el.id; }
+  // Deterministic slug-based id generator to make links shareable
+  function slugify(text){
+    return text.toString().toLowerCase().trim()
+      .replace(/\s+/g,'-')
+      .replace(/[^a-z0-9\-]/g,'')
+      .replace(/-+/g,'-')
+      .replace(/^-+|-+$/g,'');
+  }
+  function generateId(el){
+    if(el.id) return el.id;
+    const titleEl = el.querySelector('h3');
+    const base = titleEl ? slugify(titleEl.textContent) : 'section';
+    let id = base;
+    let i = 1;
+    while(document.getElementById(id)){
+      id = base + '-' + i; i++;
+    }
+    el.id = id;
+    return el.id;
+  }
 
   document.addEventListener('DOMContentLoaded', function(){
     const input = document.getElementById('searchBox');
@@ -42,10 +61,15 @@
       });
     }
 
-    function performSearch(){
+    function performSearch(updateURL = true){
       const q = input.value.trim();
       clearResults();
       if(!q){
+        if(updateURL){
+          const u = new URL(window.location);
+          u.searchParams.delete('q');
+          history.replaceState({}, '', u);
+        }
         return;
       }
       const matches = findMatches(q);
@@ -65,6 +89,11 @@
           // smooth scroll to the section and highlight
           e.preventDefault();
           document.getElementById(id).scrollIntoView({behavior:'smooth', block:'start'});
+          // update URL with query and fragment so it's shareable
+          const u = new URL(window.location);
+          u.searchParams.set('q', input.value.trim());
+          u.hash = id;
+          history.replaceState({}, '', u);
           // briefly flash highlight on the element
           m.el.classList.add('search-result-focus');
           setTimeout(()=> m.el.classList.remove('search-result-focus'), 2000);
@@ -94,5 +123,16 @@
         if(first){ first.click(); }
       }
     });
+    // If URL has a query param `q`, prefill input and run search
+    try{
+      const params = new URLSearchParams(window.location.search);
+      const q0 = params.get('q');
+      if(q0){ input.value = q0; performSearch(false); }
+      // If hash points to a section id, scroll there
+      if(window.location.hash){
+        const target = document.getElementById(window.location.hash.replace(/^#/,''));
+        if(target) target.scrollIntoView();
+      }
+    }catch(e){ /* ignore in non-browser env */ }
   });
 })();
