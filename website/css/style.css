@@ -1,0 +1,30 @@
+:root{--bg:#fff7f0;--accent:#ffb84d;--muted:#6b6b6b;--container:1100px}
+*{box-sizing:border-box}body{font-family:Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#222;margin:0;line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg,#ffefdb,#ffd9b4);padding:24px 0;border-bottom:4px solid #eaa85a}
+.logo{height:64px;vertical-align:middle;margin-right:16px}
+.site-header h1{display:inline-block;font-size:1.8rem;margin:0;vertical-align:middle}
+.tagline{margin:8px 0 0;color:var(--muted)}
+main{padding:24px 0}
+section{background:#fff;border-radius:8px;padding:18px;margin-bottom:18px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+section h2{margin-top:0;color:#b85a2a}
+.services ul{padding-left:20px}
+.screenshot img{max-width:100%;height:auto;border-radius:6px;display:block}
+.site-footer{background:#fff3e6;padding:12px 0;border-top:1px solid #f1d3b2;text-align:center;color:var(--muted)}
+/* gallery */
+.gallery h2{margin-top:0;color:#b85a2a}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:12px}
+.gallery-item{width:100%;height:140px;object-fit:cover;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,0.08)}
+
+/* structured company profile */
+.profile-excerpt.structured{background:#fff;border-radius:8px;padding:18px;margin-top:12px;box-shadow:0 2px 6px rgba(0,0,0,0.05)}
+.profile-excerpt.structured article{margin-bottom:14px}
+.profile-excerpt.structured h3{color:#b85a2a;margin-bottom:8px}
+.profile-excerpt.structured p{margin:6px 0;color:#333}
+.profile-excerpt.structured ul{margin:8px 0 12px 20px}
+.profile-excerpt.structured .company-details p{line-height:1.4}
+
+/* make images in gallery clickable and visible */
+.gallery-item{cursor:pointer;transition:transform .15s ease}
+.gallery-item:hover{transform:scale(1.03)}
+@media(max-width:640px){.container{padding:12px}.site-header h1{font-size:1.2rem}.logo{height:48px}}
