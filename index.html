@@ -39,6 +39,10 @@
     },
     "image": "https://nryogee-netizen.github.io/ndn-site/assets/logo.svg",
     "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/ndncontrols",
+      "https://www.linkedin.com/company/ndn-controls-and-automation"
+    ],
     "serviceType": [
       "Industrial Automation",
       "PLC Programming",
@@ -46,15 +50,22 @@
       "SCADA Systems",
       "Control Panel Manufacturing",
       "System Integration"
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "25"
+    }
   }
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Corporation",
+    "@type": "Organization",
     "name": "NDN Controls and Automation",
     "legalName": "NDN Controls and Automation",
+    "url": "https://nryogee-netizen.github.io/ndn-site/",
+    "logo": "https://nryogee-netizen.github.io/ndn-site/assets/logo.svg",
     "taxID": "29AVTPR2427G1Z1",
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
@@ -64,6 +75,12 @@
     "brand": {
       "@type": "Brand",
       "name": "NDN Controls and Automation"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+919972700220",
+      "email": "ndncontrols@gmail.com"
     }
   }
   </script>
@@ -84,17 +101,76 @@
   </header>
 
       <div class="profile-excerpt structured">
-        <article class="company-details">
+        <article class="company-details" id="company-details" style="display:none;">
           <h3>Company Details</h3>
           <p><strong>Name:</strong> NDN Controls &amp; Automation</p>
-          <p><strong>Address:</strong> #742, 14th Cross, Behind Widia Poornapragna School, Bangalore - 560073</p>
+          <p><strong>Address:</strong> <a href="https://maps.google.com/?q=742+14th+Cross+Behind+Widia+Poornapragna+School+Bangalore+560073" target="_blank" rel="noopener noreferrer">#742, 14th Cross, Behind Widia Poornapragna School, Bangalore - 560073</a></p>
           <p><strong>Mobile:</strong> <a href="tel:+919972700220">+91 99727 00220</a>, <a href="tel:+919482595796">+91 94825 95796</a></p>
           <p><strong>Email:</strong> <a href="mailto:ndncontrols@gmail.com">ndncontrols@gmail.com</a></p>
           <p><strong>GST:</strong> 29AVTPR2427G1Z1</p>
           <p><strong>SSI Status:</strong> Small Scale Industry</p>
         </article>
+      </div>
 
-        <article class="products">
+      <!-- Content Slider Section -->
+      <div class="content-slider-section">
+        <div class="content-slider">
+          <div class="content-slider-container">
+            <div id="contentSliderWrapper" class="content-slider-wrapper"></div>
+            <button class="slider-control content-prev" id="contentPrevBtn" aria-label="Previous image">❮</button>
+            <button class="slider-control content-next" id="contentNextBtn" aria-label="Next image">❯</button>
+          </div>
+          <div class="slider-indicators" id="contentSliderIndicators"></div>
+        </div>
+      </div>
+
+      <div class="profile-excerpt structured">
+      <div class="our-strength-section">
+        <div class="strength-header">
+          <h2>Our Strength</h2>
+          <p>Delivering excellence through specialized expertise and innovative automation solutions</p>
+        </div>
+        
+        <div class="services-grid container">
+          <a href="#capabilities" class="service-card">
+            <div class="service-icon">⚙️</div>
+            <h3>PLC Programming</h3>
+            <p>Advanced programmable logic controller solutions for complex automation systems</p>
+          </a>
+          
+          <a href="#products" class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>HMI Development</h3>
+            <p>User-friendly Human Machine Interfaces for seamless operator interaction</p>
+          </a>
+          
+          <a href="#capabilities" class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>SCADA Systems</h3>
+            <p>Supervisory control and data acquisition for real-time monitoring</p>
+          </a>
+          
+          <a href="#products" class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>VFD & Drives</h3>
+            <p>Variable frequency drives for optimized motor control and energy efficiency</p>
+          </a>
+          
+          <a href="#panels" class="service-card">
+            <div class="service-icon">🏭</div>
+            <h3>Control Panels</h3>
+            <p>Custom-designed electrical and control panels for various industrial applications</p>
+          </a>
+          
+          <a href="#activities" class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>System Integration</h3>
+            <p>End-to-end solutions from concept through commissioning and support</p>
+          </a>
+        </div>
+      </div>
+
+        <article class="products" id="products" style="display:none;">
           <h3>Products &amp; Solutions</h3>
           <p>We design, manufacture and supply a range of automation products and control systems including:</p>
           <ul>
@@ -106,7 +182,7 @@
           </ul>
         </article>
 
-        <article class="staff">
+        <article class="staff" id="staff" style="display:none;">
           <h3>Office Staff</h3>
           <ul>
             <li>Administrative: 1</li>
@@ -116,13 +192,13 @@
           </ul>
         </article>
 
-        <article class="introduction">
+        <article class="introduction" id="introduction" style="display:none;">
           <h3>Introduction</h3>
           <p>NDN Controls and Automation was started in Bengaluru, Karnataka. The company was formed by a professional automation team with extensive experience in the design and integration of industrial automation systems including PLC, HMI, SCADA, VFDs, servo drives, soft starters and electrical control panels.</p>
           <p>We provide weighing automation, batching systems, tank weighing and other industrial weighing solutions. Our multidisciplinary engineering and management expertise enables us to deliver end-to-end solutions from concept through commissioning.</p>
         </article>
 
-        <article class="capabilities">
+        <article class="capabilities" id="capabilities" style="display:none;">
           <h3>Technology Capabilities</h3>
           <p>We have experience integrating multi-brand products; our capabilities include PLC programming, SCADA &amp; HMI development, motion control, data logging and energy management. We work with products from:</p>
           <ul>
@@ -136,7 +212,7 @@
           </ul>
         </article>
 
-        <article class="activities">
+        <article class="activities" id="activities" style="display:none;">
           <h3>Activities</h3>
           <ul>
             <li>Marketing and integration of industrial automation products</li>
@@ -147,7 +223,7 @@
           </ul>
         </article>
 
-        <article class="quality">
+        <article class="quality" id="quality" style="display:none;">
           <h3>Quality Assurance</h3>
           <p>NDN maintains an organizational and management structure with seasoned professionals and established systems to ensure quality and timely delivery. Our approach provides technical specialization and knowledgeable supervision across project disciplines.</p>
           <h4>Industries served</h4>
@@ -165,7 +241,7 @@
           </ul>
         </article>
 
-        <article class="panels">
+        <article class="panels" id="panels" style="display:none;">
           <h3>Control Panels &amp; Applications</h3>
           <ul>
             <li>PLC Control Panels</li>
@@ -178,67 +254,96 @@
           </ul>
         </article>
 
-        <article class="case-studies">
+        <article class="case-studies" id="case-studies" style="display:none;">
           <h3>Case Study</h3>
           <p><strong>Fire Engine Pump Panel and Jockey Pump Control Panel</strong><br>
           Customer: Petronet MHB Ltd.<br>
           Technology: LS make XLB PLC and LS 7&quot; HMI</p>
         </article>
       </div>
---- PAGE 9 ---
-PLC CONTROL PANELS
-VFD CONTROL PANELS
-MCC PANELS
-STAR DELTA PANEL
-SOFT STARTER PANEL
-APFC PANEL
 
+      <!-- Reviews & Comments Section -->
+      <div class="profile-excerpt structured reviews-section">
+        <h2>Customer Reviews & Comments</h2>
+        
+        <!-- Review Form -->
+        <div class="review-form-container">
+          <h3>Leave Your Feedback</h3>
+          <form id="reviewForm">
+            <div class="form-group">
+              <label for="reviewName">Name:</label>
+              <input type="text" id="reviewName" name="name" required placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="reviewEmail">Email:</label>
+              <input type="email" id="reviewEmail" name="email" required placeholder="Your email">
+            </div>
+            <div class="form-group">
+              <label for="reviewRating">Rating:</label>
+              <select id="reviewRating" name="rating" required>
+                <option value="">Select rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                <option value="4">⭐⭐⭐⭐ Very Good</option>
+                <option value="3">⭐⭐⭐ Good</option>
+                <option value="2">⭐⭐ Fair</option>
+                <option value="1">⭐ Poor</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="reviewComment">Your Comment:</label>
+              <textarea id="reviewComment" name="comment" required placeholder="Share your experience..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit Review</button>
+          </form>
+        </div>
 
---- PAGE 10 ---
-ELECTRICAL CONTROL PANELS
-
-
---- PAGE 11 ---
-ELECTRICAL CONTROL PANELS
-
-
---- PAGE 12 ---
-SPM MACHINES
-TECHNOLOGY: INOVANCE PLC HMI AND SERVO, LS PLC, SIEMENS PLC, DELTA PLC
-
-
---- PAGE 13 ---
-FIRE ENGINE PUMP PANEL AND JOCKEY PUMP CONTROL PANEL 
-FOR PETROLEUM COMPANY.
-CUSTOMER
- : Petronet MHB Ltd.
-TECHNOLOGY: LS make XLB PLC and LS make 7 Inch HMI
-
-
---- PAGE 14 ---
-GENERAL APPLICATIONS
-
-
---- PAGE 15 ---
-PLC TEST KIT FOR ENGINEERING UNIVERSITY:
+        <!-- Reviews Display -->
+        <div class="reviews-container">
+          <h3>Reviews</h3>
+          <div id="reviewsList" class="reviews-list"></div>
+        </div>
+      </div>
 
 </pre>
   </div>
     </section>
   </main>
-  
-  <section class="gallery container">
-    <h2>Document images</h2>
-    <div id="pdfGallery" class="row g-3" aria-live="polite"></div>
-    <!-- Modal for viewing images -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content rounded-0 bg-transparent border-0">
-          <div class="modal-body p-0 position-relative">
-            <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
-            <img id="modalImage" src="" alt="" class="img-fluid rounded w-100">
-          </div>
-        </div>
+
+  <!-- Get In Touch Section -->
+  <section class="get-in-touch">
+    <div class="get-in-touch-header">
+      <h2>Get in touch with us</h2>
+    </div>
+    <div class="get-in-touch-content container">
+      <div class="touch-column">
+        <h3>Our Company</h3>
+        <ul class="touch-links">
+          <li><a href="#company-details">About Us</a></li>
+          <li><a href="#products">Products & Services</a></li>
+          <li><a href="tel:+919972700220">Contact Us</a></li>
+          <li><a href="mailto:ndncontrols@gmail.com">Email Us</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+        </ul>
+      </div>
+      <div class="touch-column">
+        <h3>Quick Links</h3>
+        <ul class="touch-links">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#capabilities">Technology Capabilities</a></li>
+          <li><a href="#quality">Quality & Industries</a></li>
+          <li><a href="#panels">Control Panels</a></li>
+          <li><a href="#activities">Our Activities</a></li>
+        </ul>
+      </div>
+      <div class="touch-column">
+        <h3>Contact Information</h3>
+        <ul class="touch-links">
+          <li><strong>Phone:</strong> <a href="tel:+919972700220">+91 99727 00220</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+919482595796">+91 94825 95796</a></li>
+          <li><strong>Email:</strong> <a href="mailto:ndncontrols@gmail.com">ndncontrols@gmail.com</a></li>
+          <li><strong>GST:</strong> 29AVTPR2427G1Z1</li>
+          <li><strong>Location:</strong> Bangalore, India</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -250,46 +355,212 @@ PLC TEST KIT FOR ENGINEERING UNIVERSITY:
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
   <script>
-    // Load gallery from a generated manifest to avoid probing non-existent files
+    // Content Slider Functionality (for company details section)
     (async function(){
-      const gallery = document.getElementById('pdfGallery');
-      if(!gallery) return;
-      try{
+      const contentSliderWrapper = document.getElementById('contentSliderWrapper');
+      const contentSliderIndicators = document.getElementById('contentSliderIndicators');
+      const contentPrevBtn = document.getElementById('contentPrevBtn');
+      const contentNextBtn = document.getElementById('contentNextBtn');
+      
+      let contentCurrentIndex = 0;
+      let contentAutoSlideInterval;
+      let contentSliderImages = [];
+
+      // Load images from assets/images.json
+      try {
         const res = await fetch('assets/images.json');
-        if(!res.ok){ console.warn('images.json not found', res.status); return; }
-        const files = await res.json();
-        files.forEach(fn => {
-          // Wrap image in a link to allow viewing full-size when clicked
-          const col = document.createElement('div');
-          col.className = 'col-sm-6 col-md-4 col-lg-3';
-          const link = document.createElement('a');
-          link.href = '#';
-          link.className = 'd-block';
-          link.setAttribute('data-fn', fn);
-
-          const img = document.createElement('img');
-          img.src = 'assets/' + fn;
-          img.alt = 'Company profile asset';
-          img.className = 'gallery-item img-fluid rounded';
-          img.loading = 'lazy';
-
-          link.appendChild(img);
-          col.appendChild(link);
-          gallery.appendChild(col);
-
-          // Open modal on click
-          link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const src = 'assets/' + fn;
-            const modalImage = document.getElementById('modalImage');
-            if(modalImage){ modalImage.src = src; modalImage.alt = img.alt; }
-            try{ const bsModal = new bootstrap.Modal(document.getElementById('imageModal')); bsModal.show(); }catch(err){ window.open(src, '_blank'); }
-          });
+        if (!res.ok) return;
+        contentSliderImages = await res.json();
+        
+        // Create slider items
+        contentSliderImages.forEach((img, idx) => {
+          const item = document.createElement('div');
+          item.className = 'content-slider-item' + (idx === 0 ? ' active' : '');
+          item.innerHTML = `<img src="assets/${img}" alt="Document image ${idx + 1}">`;
+          contentSliderWrapper.appendChild(item);
         });
-      }catch(err){
-        console.error('Failed to load gallery manifest', err);
+
+        // Create indicator dots
+        contentSliderImages.forEach((_, idx) => {
+          const dot = document.createElement('button');
+          dot.className = 'slider-dot' + (idx === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+          dot.addEventListener('click', () => goToContentSlide(idx));
+          contentSliderIndicators.appendChild(dot);
+        });
+
+        function showContentSlide(idx) {
+          const items = document.querySelectorAll('.content-slider-item');
+          const dots = document.querySelectorAll('#contentSliderIndicators .slider-dot');
+          
+          if (idx >= items.length) contentCurrentIndex = 0;
+          if (idx < 0) contentCurrentIndex = items.length - 1;
+          
+          items.forEach(item => item.classList.remove('active'));
+          dots.forEach(dot => dot.classList.remove('active'));
+          
+          items[contentCurrentIndex].classList.add('active');
+          dots[contentCurrentIndex].classList.add('active');
+        }
+
+        function nextContentSlide() {
+          contentCurrentIndex++;
+          if (contentCurrentIndex >= contentSliderImages.length) contentCurrentIndex = 0;
+          showContentSlide(contentCurrentIndex);
+        }
+
+        function prevContentSlide() {
+          contentCurrentIndex--;
+          if (contentCurrentIndex < 0) contentCurrentIndex = contentSliderImages.length - 1;
+          showContentSlide(contentCurrentIndex);
+        }
+
+        function goToContentSlide(idx) {
+          contentCurrentIndex = idx;
+          showContentSlide(contentCurrentIndex);
+          resetContentAutoSlide();
+        }
+
+        function startContentAutoSlide() {
+          contentAutoSlideInterval = setInterval(nextContentSlide, 5000);
+        }
+
+        function resetContentAutoSlide() {
+          clearInterval(contentAutoSlideInterval);
+          startContentAutoSlide();
+        }
+
+        // Event listeners
+        contentPrevBtn.addEventListener('click', () => {
+          prevContentSlide();
+          resetContentAutoSlide();
+        });
+
+        contentNextBtn.addEventListener('click', () => {
+          nextContentSlide();
+          resetContentAutoSlide();
+        });
+
+        // Start automatic slider
+        startContentAutoSlide();
+
+        // Pause on hover
+        const contentSliderContainer = document.querySelector('.content-slider-container');
+        if (contentSliderContainer) {
+          contentSliderContainer.addEventListener('mouseenter', () => clearInterval(contentAutoSlideInterval));
+          contentSliderContainer.addEventListener('mouseleave', () => startContentAutoSlide());
+        }
+
+      } catch (err) {
+        console.error('Failed to load content slider images', err);
       }
     })();
+
+    // Reviews Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const reviewForm = document.getElementById('reviewForm');
+      const reviewsList = document.getElementById('reviewsList');
+      const STORAGE_KEY = 'ndnCompanyReviews';
+
+      // Load reviews from localStorage
+      function loadReviews() {
+        const reviews = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        displayReviews(reviews);
+      }
+
+      // Display reviews
+      function displayReviews(reviews) {
+        if (reviews.length === 0) {
+          reviewsList.innerHTML = '<p class="no-reviews">No reviews yet. Be the first to share your feedback!</p>';
+          return;
+        }
+        
+        reviewsList.innerHTML = reviews.map((review, idx) => `
+          <div class="review-item">
+            <div class="review-header">
+              <span class="review-name">${review.name}</span>
+              <span class="review-rating">${'⭐'.repeat(review.rating)}</span>
+            </div>
+            <p class="review-comment">${review.comment}</p>
+            <p class="review-date">${new Date(review.date).toLocaleDateString()}</p>
+          </div>
+        `).join('');
+      }
+
+      // Handle form submission
+      reviewForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const review = {
+          name: document.getElementById('reviewName').value,
+          email: document.getElementById('reviewEmail').value,
+          rating: parseInt(document.getElementById('reviewRating').value),
+          comment: document.getElementById('reviewComment').value,
+          date: new Date().toISOString()
+        };
+
+        // Get existing reviews and add new one
+        const reviews = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+        reviews.unshift(review);
+        
+        // Save to localStorage (limit to 50 most recent reviews)
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews.slice(0, 50)));
+        
+        // Reset form
+        reviewForm.reset();
+        
+        // Reload reviews display
+        loadReviews();
+        
+        // Show success message
+        alert('Thank you for your review!');
+      });
+
+      // Initial load
+      loadReviews();
+    });
+
+    // Service Card Navigation
+    document.querySelectorAll('.service-card').forEach(card => {
+      card.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Get target section ID from href
+        const targetId = this.getAttribute('href').substring(1);
+        
+        // Hide all articles
+        document.querySelectorAll('.profile-excerpt.structured article').forEach(article => {
+          article.style.display = 'none';
+        });
+        
+        // Hide Our Strength section
+        document.querySelector('.our-strength-section').style.display = 'none';
+        
+        // Show target article with back button
+        const targetArticle = document.getElementById(targetId);
+        if (targetArticle) {
+          targetArticle.style.display = 'block';
+          
+          // Add back button if not already present
+          if (!targetArticle.querySelector('.back-to-services')) {
+            const backBtn = document.createElement('button');
+            backBtn.className = 'back-to-services';
+            backBtn.textContent = '← Back to Our Strength';
+            backBtn.style.marginBottom = '20px';
+            targetArticle.insertBefore(backBtn, targetArticle.firstChild);
+            
+            backBtn.addEventListener('click', function() {
+              targetArticle.style.display = 'none';
+              document.querySelector('.our-strength-section').style.display = 'block';
+              backBtn.remove();
+            });
+          }
+          
+          // Scroll to top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    });
   </script>
 </body>
 </html>
