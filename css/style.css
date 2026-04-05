@@ -3,6 +3,14 @@ html{scroll-behavior:smooth}
 *{box-sizing:border-box}body{font-family:Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,rgba(255,247,240,0.85),rgba(255,239,219,0.85)),url('../assets/pdf_image_9_97.jpeg') left/30% no-repeat,url('../assets/pdf_image_10_104.jpeg') right/35% no-repeat fixed;background-position:0 20%,right bottom;background-color:var(--bg);color:#222;margin:0;line-height:1.5}
 .container{max-width:var(--container);margin:0 auto;padding:24px}
 .site-header{background:linear-gradient(90deg,#ffefdb,#ffd9b4);padding:24px 0;border-bottom:4px solid #eaa85a}
+
+/* Contact Info Bar */
+.contact-info-bar{background:#fff;border-bottom:2px solid #f1d3b2;padding:16px 0;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
+.contact-info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:0 24px}
+.contact-item{font-size:0.95rem;line-height:1.6;color:#333}
+.contact-item strong{color:#b85a2a;font-weight:600;margin-right:8px}
+.contact-item a{color:#b85a2a;text-decoration:none;font-weight:500}
+.contact-item a:hover{text-decoration:underline;color:#ff9500}
 /* Content Slider Styles (for company details section) */
 .content-slider-section{margin:40px 0;padding:0;background:#fff;width:100%;display:flex;justify-content:center}
 .content-slider-section h4{color:#b85a2a;margin-bottom:16px}
